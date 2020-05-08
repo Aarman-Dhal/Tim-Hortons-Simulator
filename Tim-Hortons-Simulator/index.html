@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tim Hortons Simulator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Tim Hortons Simulator</h1>
+       
+        <hr>
+
+        <!--  Instructions -->
+        <p id='instructions'>Enter the province you live in using capital letters, then select one of the following buttons to simulate your results.</p>
+
+        <!-- Image & Results -->
+        <img id='mainImg' src='images/roll-up-the-rim.jpeg' style="width: 800px; height: 400px;">
+        <p>Province:<input id='province-name' type="text"> <button id='search'>Search</button></p>
+       
+        <hr>
+
+        <h2>Simulation Options</h2>
+        <p> <button id='once'>Simulate Once</button> <button id='plusfive'>Simulate Five Times</button> <button id='untilGrandPrize'>Simulate Until Grand Prize</button> <button id='until500donuts'>Simulate Until 500 Donuts</button></p>
+        <p id='display'>
+            <strong>TOTALS -> </strong>
+            Please Play Again: <span id="retry">0</span> |
+            Free Coffee: <span id="coffee">0</span> |
+            Free Donut: <span id="donut">0</span> |
+            Grand Prize: <span id="prize">0</span> |
+        </p>
+
+        <p id="results"></p>
+    </div>
+
+  <!--  LOAD JAVASCRIPT -->
+  <script src="main.js"></script>
+
+</body>
+
+</html>
